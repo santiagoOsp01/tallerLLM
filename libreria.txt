@@ -1,0 +1,6 @@
+langchain
+openai
+tiktoken
+request
+pydintic
+pinecone-client
