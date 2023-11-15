@@ -23,12 +23,12 @@ git clone https://github.com/santiagoOsp01/tallerLLM.git
 luego te metes a este directorio y ejecutas los siguientes comandos
 
 ```
-pip langchain 
-pip openai==0.27.8
-pip tiktoken
-pip requests
-pip pydantic
-pip pinecone-client
+pip install langchain 
+pip install openai==0.27.8
+pip install tiktoken
+pip install requests
+pip install pydantic
+pip install pinecone-client
 ```
 ya despues de tener estas dependencias toca primero llenar nuestra base de datos en pinecone con los documentos que
 aparecen en el directorio del proyectoy correr el siguiente script para subirlos a la base de datos que se llama textloader.py y lo corremos, haciendo los cambios necesarios
