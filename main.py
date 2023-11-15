@@ -20,7 +20,6 @@ def buscarInformacion(query: str) -> str:
     embeddings = OpenAIEmbeddings()
     docsearch = Pinecone.from_existing_index("taller", embeddings)
     qa = RetrievalQA.from_chain_type(llm=OpenAI(), chain_type="refine", retriever=docsearch.as_retriever(tipo="similarity"))
-    query = "cuantos años de acreditación tiene ingeniería electrica?"
     return qa.run(query)
 
 def main():
@@ -35,7 +34,7 @@ def main():
         agent=AgentType.OPENAI_FUNCTIONS,
         verbose=True
     )
-    print(agent.run("el programa de ingenieria de istemas tiene acreditacion"))
+    print(agent.run("el programa de ingenieria electrica tiene de acreditacion"))
 
 if __name__ == '__main__':
     main()
